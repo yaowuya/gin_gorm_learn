@@ -40,4 +40,6 @@ func InitConfig() {
 
 	// 监控配置文件变化并热加载
 	viper.WatchConfig()
+
+	initDb()
 }
