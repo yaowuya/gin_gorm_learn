@@ -42,4 +42,5 @@ func InitConfig() {
 	viper.WatchConfig()
 
 	initDb()
+	initRedis()
 }
