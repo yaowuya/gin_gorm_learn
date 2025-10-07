@@ -19,4 +19,13 @@ export default defineConfigWithVueTs(
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
   skipFormatting,
+  // 添加自定义规则配置
+  {
+    name: 'app/custom-rules',
+    files: ['**/*.vue'],
+    rules: {
+      // 全局禁用 Vue 组件名多词检查规则
+      'vue/multi-word-component-names': 'off',
+    },
+  },
 )
